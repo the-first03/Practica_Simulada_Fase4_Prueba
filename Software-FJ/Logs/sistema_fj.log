@@ -1,0 +1,124 @@
+2026-11-20 22:55:07 | INFO     | Sistema Software FJ inicializado.
+2026-11-20 22:55:07 | INFO     | Interfaz gráfica iniciada.
+2026-11-20 22:55:28 | INFO     | Interfaz gráfica cerrada por el usuario.
+2026-11-20 22:57:35 | INFO     | Sistema Software FJ inicializado.
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio de la demostración #1.
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 01. Registrar cliente válido (Ana María Torres)
+2026-11-20 22:57:35 | INFO     | Cliente registrado: Ana María Torres (CLI-0001).
+2026-11-20 22:57:35 | DEBUG    | Intento de registro del documento 10012257351 finalizado.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 01. Registrar cliente válido (Ana María Torres)
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 02. Registrar cliente con correo inválido
+2026-11-20 22:57:35 | ERROR    | No se pudo registrar el cliente CLI-0002: El correo 'correo-sin-arroba' no tiene un formato válido (ej. nombre@dominio.com).
+2026-11-20 22:57:35 | DEBUG    | Intento de registro del documento 20012257352 finalizado.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '02. Registrar cliente con correo inválido': DatosInvalidosError: El correo 'correo-sin-arroba' no tiene un formato válido (ej. nombre@dominio.com).
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 02. Registrar cliente con correo inválido
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 03. Registrar cliente sin nombre (parámetros faltantes)
+2026-11-20 22:57:35 | ERROR    | No se pudo registrar el cliente CLI-0002: El campo 'nombre' es obligatorio.
+2026-11-20 22:57:35 | DEBUG    | Intento de registro del documento 30012257353 finalizado.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '03. Registrar cliente sin nombre (parámetros faltantes)': ParametrosFaltantesError: El campo 'nombre' es obligatorio.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 03. Registrar cliente sin nombre (parámetros faltantes)
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 04. Registrar cliente con documento duplicado
+2026-11-20 22:57:35 | ERROR    | Registro de cliente rechazado: Ya existe un cliente con el documento 10012257351.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '04. Registrar cliente con documento duplicado': OperacionNoPermitidaError: Ya existe un cliente con el documento 10012257351.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 04. Registrar cliente con documento duplicado
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 05. Crear servicio de sala válido
+2026-11-20 22:57:35 | INFO     | Servicio creado: Sala Creativa (SRV-0001) - Sala
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de servicio tipo 'Sala' finalizado.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 05. Crear servicio de sala válido
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 06. Crear servicio de alquiler de equipos válido
+2026-11-20 22:57:35 | INFO     | Servicio creado: Portátiles Dell (SRV-0002) - Equipo
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de servicio tipo 'Equipo' finalizado.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 06. Crear servicio de alquiler de equipos válido
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 07. Crear servicio de asesoría válido
+2026-11-20 22:57:35 | INFO     | Servicio creado: Asesoría en Python (SRV-0003) - Asesoría
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de servicio tipo 'Asesoría' finalizado.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 07. Crear servicio de asesoría válido
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 08. Crear servicio con tipo inexistente
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '08. Crear servicio con tipo inexistente': DatosInvalidosError: Tipo de servicio 'Dron' no reconocido. Use: Sala, Equipo o Asesoría.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 08. Crear servicio con tipo inexistente
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 09. Crear servicio con tarifa negativa
+2026-11-20 22:57:35 | ERROR    | No se pudo crear el servicio SRV-0004: La tarifa base debe ser mayor que cero.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de servicio tipo 'Sala' finalizado.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '09. Crear servicio con tarifa negativa': DatosInvalidosError: La tarifa base debe ser mayor que cero.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 09. Crear servicio con tarifa negativa
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 10. Crear y confirmar una reserva válida
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 creada: cliente=CLI-0001, servicio=SRV-0001, horas=3.0.
+2026-11-20 22:57:35 | INFO     | Reserva registrada: RES-0001.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de reserva finalizado.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 | Intento de confirmación.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 | Confirmada por $180,088.65.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0001 | Confirmación finalizada. Estado actual: CONFIRMADA.
+2026-11-20 22:57:35 | INFO     | Confirmación de RES-0001 aceptada por $180,088.65.
+2026-11-20 22:57:35 | DEBUG    | Operación confirmar_reserva(RES-0001) finalizada.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 10. Crear y confirmar una reserva válida
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 11. Crear reserva con duración negativa
+2026-11-20 22:57:35 | ERROR    | No se pudo crear la reserva: La duración debe ser mayor que cero horas.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de reserva finalizado.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '11. Crear reserva con duración negativa': ReservaInvalidaError: La duración debe ser mayor que cero horas.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 11. Crear reserva con duración negativa
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 12. Confirmar reserva de un servicio no disponible
+2026-11-20 22:57:35 | INFO     | Servicio SRV-0002 (Portátiles Dell) marcado como no disponible. Mantenimiento programado
+2026-11-20 22:57:35 | INFO     | Reserva RES-0003 creada: cliente=CLI-0001, servicio=SRV-0002, horas=4.0.
+2026-11-20 22:57:35 | INFO     | Reserva registrada: RES-0003.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de reserva finalizado.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0003 | Intento de confirmación.
+2026-11-20 22:57:35 | ERROR    | Reserva RES-0003 | Confirmación fallida: El servicio 'Portátiles Dell' no está disponible.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0003 | Confirmación finalizada. Estado actual: PENDIENTE.
+2026-11-20 22:57:35 | ERROR    | Confirmación de RES-0003 rechazada: El servicio 'Portátiles Dell' no está disponible.
+2026-11-20 22:57:35 | DEBUG    | Operación confirmar_reserva(RES-0003) finalizada.
+2026-11-20 22:57:35 | INFO     | Servicio SRV-0002 (Portátiles Dell) marcado como disponible. Mantenimiento finalizado
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '12. Confirmar reserva de un servicio no disponible': ServicioNoDisponibleError: El servicio 'Portátiles Dell' no está disponible.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 12. Confirmar reserva de un servicio no disponible
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 13. Confirmar asesoría de menos de una hora
+2026-11-20 22:57:35 | INFO     | Reserva RES-0004 creada: cliente=CLI-0001, servicio=SRV-0003, horas=0.5.
+2026-11-20 22:57:35 | INFO     | Reserva registrada: RES-0004.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de reserva finalizado.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0004 | Intento de confirmación.
+2026-11-20 22:57:35 | ERROR    | Reserva RES-0004 | Confirmación fallida: No fue posible calcular el costo de la reserva RES-0004: Una asesoría especializada requiere como mínimo 1 hora.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0004 | Confirmación finalizada. Estado actual: PENDIENTE.
+2026-11-20 22:57:35 | ERROR    | Confirmación de RES-0004 rechazada: No fue posible calcular el costo de la reserva RES-0004: Una asesoría especializada requiere como mínimo 1 hora.
+2026-11-20 22:57:35 | DEBUG    | Operación confirmar_reserva(RES-0004) finalizada.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '13. Confirmar asesoría de menos de una hora': CalculoInconsistenteError: No fue posible calcular el costo de la reserva RES-0004: Una asesoría especializada requiere como mínimo 1 hora.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 13. Confirmar asesoría de menos de una hora
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 14. Procesar la reserva confirmada
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 | Intento de procesamiento.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 | Procesada. Cobro: $180,088.65
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0001 | Procesamiento finalizado. Estado actual: PROCESADA.
+2026-11-20 22:57:35 | INFO     | Procesamiento de RES-0001 completado.
+2026-11-20 22:57:35 | DEBUG    | Operación procesar_reserva(RES-0001) finalizada.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 14. Procesar la reserva confirmada
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 15. Cancelar una reserva ya procesada
+2026-11-20 22:57:35 | INFO     | Reserva RES-0001 | Intento de cancelación.
+2026-11-20 22:57:35 | ERROR    | Reserva RES-0001 | Cancelación rechazada: La reserva RES-0001 ya fue procesada y no puede cancelarse.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0001 | Cancelación finalizada. Estado actual: PROCESADA.
+2026-11-20 22:57:35 | ERROR    | Cancelación de RES-0001 rechazada: La reserva RES-0001 ya fue procesada y no puede cancelarse.
+2026-11-20 22:57:35 | DEBUG    | Operación cancelar_reserva(RES-0001) finalizada.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '15. Cancelar una reserva ya procesada': OperacionNoPermitidaError: La reserva RES-0001 ya fue procesada y no puede cancelarse.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 15. Cancelar una reserva ya procesada
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 16. Confirmar dos veces la misma reserva
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 creada: cliente=CLI-0001, servicio=SRV-0002, horas=2.0.
+2026-11-20 22:57:35 | INFO     | Reserva registrada: RES-0005.
+2026-11-20 22:57:35 | DEBUG    | Intento de creación de reserva finalizado.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 | Intento de confirmación.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 | Confirmada por $149,940.00.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0005 | Confirmación finalizada. Estado actual: CONFIRMADA.
+2026-11-20 22:57:35 | INFO     | Confirmación de RES-0005 aceptada por $149,940.00.
+2026-11-20 22:57:35 | DEBUG    | Operación confirmar_reserva(RES-0005) finalizada.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 | Intento de confirmación.
+2026-11-20 22:57:35 | ERROR    | Reserva RES-0005 | Confirmación fallida: La reserva RES-0005 está CONFIRMADA y no puede confirmarse.
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0005 | Confirmación finalizada. Estado actual: CONFIRMADA.
+2026-11-20 22:57:35 | ERROR    | Confirmación de RES-0005 rechazada: La reserva RES-0005 está CONFIRMADA y no puede confirmarse.
+2026-11-20 22:57:35 | DEBUG    | Operación confirmar_reserva(RES-0005) finalizada.
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '16. Confirmar dos veces la misma reserva': OperacionNoPermitidaError: La reserva RES-0005 está CONFIRMADA y no puede confirmarse.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 16. Confirmar dos veces la misma reserva
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 17. Cancelar una reserva confirmada
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 | Intento de cancelación.
+2026-11-20 22:57:35 | INFO     | Reserva RES-0005 | Cancelada. Motivo: El cliente reprogramó la actividad
+2026-11-20 22:57:35 | DEBUG    | Reserva RES-0005 | Cancelación finalizada. Estado actual: CANCELADA.
+2026-11-20 22:57:35 | INFO     | Cancelación de RES-0005 registrada.
+2026-11-20 22:57:35 | DEBUG    | Operación cancelar_reserva(RES-0005) finalizada.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 17. Cancelar una reserva confirmada
+2026-11-20 22:57:35 | INFO     | DEMO | Inicio: 18. Buscar un cliente inexistente
+2026-11-20 22:57:35 | WARNING  | DEMO | Error controlado en '18. Buscar un cliente inexistente': RecursoNoEncontradoError: No existe un cliente con documento 999999999.
+2026-11-20 22:57:35 | INFO     | DEMO | Fin: 18. Buscar un cliente inexistente
+2026-11-20 22:57:35 | INFO     | DEMO | Demostración finalizada: 18 operaciones, 7 exitosas.
